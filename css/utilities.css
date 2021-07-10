@@ -1,0 +1,163 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn-primary {
+    background: #ffac2f;
+    color: #222;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.btn-dark {
+    background: #333;
+    color: #f4f4f4;
+}
+
+.btn-outline-primary {
+    color: #ffac2f;
+    border: #ffac2f solid 1px;
+}
+
+.btn-outline-dark {
+    color: #333;
+    border: #333 solid 1px;
+}
+
+.btn-primary:hover {
+    background: #ffa620;
+}
+
+.btn-light:hover {
+    background: #f1f1f1;
+}
+
+.btn-dark:hover {
+    background: rgb(44, 44, 44);
+}
+
+.btn-outline-primary:hover {
+    color: #333;
+    background: #ffac2f;
+    border: #ec9e28 solid 1px;
+    transition: 0.3s;
+}
+
+.btn-outline-dark:hover {
+    color: #f4f4f4;
+    background: #333;
+    border: #222 solid 1px;
+    transition: 0.3s;
+}
+
+/* Backgrounds */
+.bg-primary {
+    background: #ffac2f;
+    color: #333;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+}
+
+/* Padding */
+.py-1 {padding: 10px 0;}
+.py-2 {padding: 20px 0;}
+.py-3 {padding: 30px 0;}
+
+
+/* Container */
+.container {
+    margin: auto;
+    max-width: 980px;
+}
+
+/* Colors */
+.text-primary {
+    color: #ffa500;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-dark {
+    color: #333;
+}
+
+/* Flex Columns */
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column-1, .flex-columns .column-2 {
+    height: 564px;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+}
+
+.flex-columns h4 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+
+/* Header Row */
+.collection .header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+}
+
+.header-row h2 {
+    height: 100%;
+    font-size: 50px;
+}

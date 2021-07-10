@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.home {
+    background: url("https://source.unsplash.com/Bh_hHUfPXJU/") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #f4f4f4;
+}
+
+
+/* Header content */
+.home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.home .content h2 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.home .content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,60%);
+}
+
+.home * {
+    z-index: 1;
+}
+
+/* Navbar */
+.home .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 25px 50px;
+    background: #222;
+    opacity: 85%;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.navbar * {
+    z-index: 3;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul a {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.navbar ul a:hover {
+    /* border-bottom: 1px solid #eccb2e; */
+    background: rgba(68, 68, 68, 0.24);
+    border-radius: 2px;
+}
+
+.navbar h1 {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+/* About */
+#about {
+    height: 70vh;
+    text-align: center;
+}
+
+#about .container {
+    padding: 40px 0 20px;
+}
+
+#about h2 {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+#about p {
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* Collection */
+.collection .header-row {
+    background: rgb(70, 70, 70) url("https://source.unsplash.com/iYOsw_1a7ME") no-repeat left bottom/cover;
+}
+
+/* Contact Us */
+
+.contact {
+    height: 70vh;
+}
+
+.contact .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact .contact-form {
+    width: 100%;
+}
+
+.contact .credentials {
+    display: flex;
+}
+
+.contact .credentials .form-group {
+    flex: 1;
+}
+
+.contact .credentials .first {
+    margin-right: 15px;
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+    border-color: #ffa620;
+}
+
+.contact h2 {
+    font-size: 40px;
+}
+
+/* Footer */
+#footer {
+    height: 14vh;
+}
+
+#footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+}
+
+#footer .container a {
+    color: rgb(145, 145, 145);
+}
+
+#footer .container a:hover {
+    color: #ffa500;
+}
